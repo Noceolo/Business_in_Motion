@@ -1,11 +1,42 @@
 @font-face {
     font-family: MerriweatherBlack;
     src: url(font/Merriweather/Merriweather-Black.ttf);
+
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url(font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(font/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
     display: flex;
-    background-color: #ffdab9;
+    background-color: #1F4E79;
     justify-content: space-between;
     flex-direction: column;
     margin: 0  ;
@@ -20,7 +51,8 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     padding: 12px;
-    color: #1e4e79 ;
+    color: #F5F5DC;
+    
 }
 
 .header_left {
@@ -34,10 +66,12 @@ body {
 .main {
     display: flex;
     padding: 35px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 50px;
-    height: 350px;
-    background-color: teal;
+    
+    background-color: #FFDAB9;
+    flex-grow: 1;
+    height: 300px;
 }
 
 .personnal_container {
@@ -52,11 +86,13 @@ body {
 
 .personnal_text {
     font-size: 40px;
+    font-family: PlayfairDisplay;
     
 }
 
 .personnal_subtext {
     padding-top: 10px;
+    font-family: OpenSans;
 }
 
 .button_space{
@@ -77,9 +113,11 @@ body {
 .bottom {
     display: flex;
     justify-content: space-around;
-    
+    align-self: stretch;
+    background-color: #FFDAB9;
     height: 200px;
-    flex: 1;
+    
+    
     
 }
 
